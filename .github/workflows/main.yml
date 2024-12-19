@@ -25,4 +25,3 @@ jobs:
         ref: ${{ steps.get_branch.outputs.branch }}
 
     - run: |
-      echo "デプロイを開始しました (${{ github.event.comment.body }})"
