@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    if: ${{github.event_name}}=="issue_comment" && contains(${{github.event.comment.html_url}}, '/pull/') && startsWith(${{github.event.comment.body}}, '/deploy') )
+    if: ${{github.event_name}}=="issue_comment_1" && contains(${{github.event.comment.html_url}}, '/pull/') && startsWith(${{github.event.comment.body}}, '/deploy') )
 
     runs-on: ubuntu-latest
 
