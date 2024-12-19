@@ -2,11 +2,11 @@ name: "Deploy"
 
 on: 
   issue_comment:
-    if: ${{github.event_name}}=="issue_comment"
     types: [created, edited]
 
 jobs:
   deploy:
+    if: ${{github.event_name}}=="issue_comment"
     runs-on: ubuntu-latest
 
     steps:
