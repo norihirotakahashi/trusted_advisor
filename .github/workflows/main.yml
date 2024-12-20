@@ -8,9 +8,6 @@ jobs:
   deploy:
     if: contains(github.event.comment.html_url, '/pull/') && startsWith(github.event.comment.body, '/deploy')
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: scripts    
 
     steps:
     - name: "Get branch name and sha"
@@ -25,4 +22,4 @@ jobs:
       with:
         ref: ${{ steps.get_branch.outputs.branch }}
 
-    - run: pwd
+    - run: ./script.sh
