@@ -37,4 +37,4 @@ jobs:
        done < "${FILE}"
 
        echo ${{github.event.pull_request.title}}
-       echo ${{github.event.issue.pull_request.url}}
+       echo ${{github.event.issue.pull_request.title}}
