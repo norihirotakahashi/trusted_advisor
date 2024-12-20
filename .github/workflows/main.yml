@@ -28,4 +28,10 @@ jobs:
       with:
         ref: ${{ steps.get_branch.outputs.branch }}
 
-    - run:  aws s3 ls s3://s3-sample-bucket-994876961504
+    - run: |
+       FILE=test.txt
+       while read LINE
+       do
+       echo ${LINE}
+       done < "${FILE}"
+    
