@@ -2,6 +2,7 @@
 FILE=test.txt
 
 # FILEを読み込んで処理
-while read LINE;do
-# コマンド
+while read LINE
+do
+echo ${LINE}
 done < "${FILE}"
