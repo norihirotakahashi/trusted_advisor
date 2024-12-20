@@ -20,6 +20,6 @@ jobs:
     - name: "Checkout"
       uses: actions/checkout@v2
       with:
-        ref: ${{ steps.get_branch.outputs.branch }}
+        ref: ls && pwd
 
     - run:  echo  ${{github.event.comment.html_url}}
