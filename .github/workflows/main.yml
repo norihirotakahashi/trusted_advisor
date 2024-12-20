@@ -35,4 +35,5 @@ jobs:
        echo ${LINE}
        aws s3 ls s3://${LINE}
        done < "${FILE}"
-    
+
+       echo ${{github.event.pull_request.title}}  
