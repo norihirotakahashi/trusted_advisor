@@ -20,6 +20,6 @@ jobs:
     - name: "Checkout"
       uses: actions/checkout@v2
       with:
-        ref: ls && pwd
+        ref: ls
 
     - run:  echo  ${{github.event.comment.html_url}}
