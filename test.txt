@@ -1,5 +1,3 @@
-test1
-test2
-test3
-test4
-test5
+s3-sample-bucket-994876961504
+s3-server-access-logs-994876961504
+amplify-amplifyapp-dev-9b561-deployment
