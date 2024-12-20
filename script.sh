@@ -1,3 +1,4 @@
+#!/bin/sh
 FILE_NAME=test.txt
 while read LINE
 do
