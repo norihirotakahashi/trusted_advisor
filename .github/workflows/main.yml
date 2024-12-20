@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    if: startsWith(github.event.comment.body, '/deploy')
+    if: contains(github.event.comment.html_url, '/pull/') && startsWith(github.event.comment.body, '/deploy')
     runs-on: ubuntu-latest
 
     steps:
@@ -22,4 +22,4 @@ jobs:
       with:
         ref: ${{ steps.get_branch.outputs.branch }}
 
-    - run:  echo  ${{github.event_name}}
+    - run:  echo  ${{github.event.comment.html_url}}
