@@ -1,6 +1,2 @@
-#!/bin/bash
-FILE_NAME=test.txt
-while read LINE
-do
-# コマンド
-done < ${FILE_NAME}
+#!/bin/sh
+cat test.txt
