@@ -36,4 +36,4 @@ jobs:
        aws s3 ls s3://${LINE}
        done < "${FILE}"
 
-       echo ${{ github.event.issue.pull_request.number }}
+       echo ${{ github.event.pull_request.title }}
