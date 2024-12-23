@@ -38,4 +38,4 @@ jobs:
 
        title="${{ github.event.pull_request.title }}"
        echo ${{ github.event.issue.pull_request.url }}
-       echo title
+       echo ${title}
